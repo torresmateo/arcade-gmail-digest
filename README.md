@@ -35,7 +35,6 @@ email.
     > compatible with langchain-argade, but not upgrading results in a 
     > `TypeError` being raised when creating the client
 
-
 2. Set your environment variable
     ```bash
     export ARCADE_API_KEY=<your_key_here>
@@ -47,7 +46,9 @@ email.
     python gmail_stats.py -u example@gmail.com -n 100
     ```
 
-You'll get an email with the summary!
+You'll get an email with the summary! (see video sample below)
+
+https://github.com/user-attachments/assets/3efe739c-5926-4d65-9cc0-61c699a21cb8
 
 # Extending the functionality
 

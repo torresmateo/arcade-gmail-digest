@@ -1,6 +1,6 @@
 # Gmail digest 
 
-A sample application that relies on langgraph and Arcade-AI to read and digest 
+A sample application that relies on LangGraph and [Arcade-AI](https://github.com/ArcadeAI/arcade-ai) to read and digest 
 your inbox.
 
 # How this app works
@@ -12,12 +12,12 @@ aspects of your inbox:
 2. determines importance
 3. summarizes important emails
 4. categorizes all analyzed emails into 6 categories: 
-    a. Personal
-    b. Work
-    c. Official Duties
-    d. Marketing and promotions
-    e. News and newsletters
-    e. Other
+   - Personal
+   - Work
+   - Official Duties
+   - Marketing and promotions
+   - News and newsletters
+   - Other
 
 The full graph starts by getting the desired number of emails, and dispatching
 them in parallel to the agents, which will assign a score or category. Then, 
@@ -31,9 +31,9 @@ email.
     pip install -r requirements.txt
     pip install --upgrade arcadepy
     ```
-    >> This may generate a warning from pip saying that arcadepy > 0.2.2 is not
-    >> compatible with langchain-argade, but not upgrading results in a 
-    >> `TypeError` being raised when creating the client
+    > This may generate a warning from pip saying that arcadepy > 0.2.2 is not
+    > compatible with langchain-argade, but not upgrading results in a 
+    > `TypeError` being raised when creating the client
 
 
 2. Set your environment variable

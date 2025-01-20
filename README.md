@@ -39,6 +39,7 @@ email.
 2. Set your environment variable
     ```bash
     export ARCADE_API_KEY=<your_key_here>
+    export OPENAI_API_KEY=<your_key_here>
     ```
 
 3. Run the script

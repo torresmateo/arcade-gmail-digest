@@ -29,11 +29,7 @@ email.
 1. Install the requirements
     ```bash
     pip install -r requirements.txt
-    pip install --upgrade arcadepy
     ```
-    > This may generate a warning from pip saying that arcadepy > 0.2.2 is not
-    > compatible with langchain-argade, but not upgrading results in a 
-    > `TypeError` being raised when creating the client
 
 2. Set your environment variable
     ```bash

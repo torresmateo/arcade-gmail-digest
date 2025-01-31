@@ -106,11 +106,13 @@ def get_emails(state: OverallState):
     n_emails = int(state["n_emails"])
 
     # Get the latest emails
-    inputs = {"n_emails": n_emails}
+    inputs = {
+        "n_emails": n_emails,
+    }
 
     response = client.tools.execute(
         tool_name="Google.ListEmails",
-        inputs=inputs,
+        input=inputs,
         user_id=user_id
     )
 
@@ -163,7 +165,7 @@ def build_report(state: OverallState):
 
     response = client.tools.execute(
         tool_name="Google.SendEmail",
-        inputs=inputs,
+        input=inputs,
         user_id=user_id
     )
 
@@ -188,7 +190,7 @@ def run(user_id: str,
 
     if auth_response.status != "completed":
         print(
-            f"Click this link to authorize: {auth_response.authorization_url}")
+            f"Click this link to authorize: {auth_response.url}")
 
     # Wait for the authorization to complete
     client.auth.wait_for_completion(auth_response)
